@@ -1,0 +1,12 @@
+class MyModel:
+  def fit(X, Y):
+    pass
+  def predict(X):
+    pass
+
+
+# boilerplate
+Xtrain, Ytrain, Xtest, Ytest = get_data()  # 1. get data
+model = MyModel()  # 2. Instantiate Model
+model.fit(Xtrain, Ytrain)  # 3. Train Model
+model.score(Xtest, Ytest)  # 4. Evaluate Model

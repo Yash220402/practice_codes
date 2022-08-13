@@ -1,0 +1,14 @@
+Sender | Reciever
+    -> Take user details
+    -> Add user
+    -> Remove user
+
+Database
+    -> Storage variables :- User ID | User | Contact No. | Get+ | Give-
+    -> Database operations
+
+Operations
+    -> Mathematical Operations
+    -> View complete Database
+    -> View individual user data
+    

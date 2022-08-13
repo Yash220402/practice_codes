@@ -1,0 +1,30 @@
+maxSubArray(A,l,u): // array, lefthand limit, righthand limit
+	// base case
+	if (u == l):
+		return 0
+	elif (u == l+1):
+		return max(A[u]-A[l], 0)
+		
+	// otherwise
+	m = (l+u)//2  # mid point
+	m1 = maxSubArray(A, l, m)
+	m2 = maxSubArray(A, m+1, u)
+	  // handling straddling case
+	y1 = maxElement(A, m+1, u)
+	x1 = minElement(a, l, m)
+	
+	return (max(m1, m2, y1-x1)
+	
+
+minElement(A,l,u):
+	minEl = +inf
+	for i=l upto u:
+		minEl = min(minEl, A[i])
+	return minEl
+	
+	
+maxElement(A,l,u):
+	maxEl = +inf
+	for i=l upto u:
+		maxEl = max(maxEl, A[i])
+	return maxEl
