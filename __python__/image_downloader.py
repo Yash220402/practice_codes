@@ -53,5 +53,13 @@ def main(url):
     folder_create(images)
 
 
-url = input("Enter URL:- ")
+
+import sys
+import pyperclip
+
+if len(sys.argv) > 1:
+    url = ''.join(sys.argv[1:])
+else:
+    url = pyperclip.paste()
+
 main(url)
